@@ -81,73 +81,148 @@
   </div>
 </div>
 
-<h2>Tenant Creation User Creation</h2>
-<h3> General Info</h3>
-<div class="tenant-logo">
-<label for="TenantLogo">Browse avatar</label>
-<button id="TenantLogo" value="upload avatar">upload logo</button>
-</div>
-<div class="tenant-name">
-<label for="tenantname">Client Account Name</label>
-<input type="text" id="tenantname" />
-</div>
-<div class="model-number">
-<label for="modelNumber">Model Number</label>
-<input type="text" id="modelNumber" />
-</div>
-<div class="notes">
-<label for="modelNumber">notes</label>
-<textarea id="notes"></textarea>
-</div>
+<h2>Tenant Creation</h2>
+<div class="tenant-creation">
+  <h3>General Info</h3>
+  <div class="tenant-logo">
+    <label for="TenantLogo">Browse avatar</label>
+    <button id="TenantLogo" value="upload avatar">upload logo</button>
+  </div>
+  <div class="tenant-name">
+    <label for="tenantname">Client Account Name</label>
+    <input type="text" id="tenantname" />
+  </div>
+  <div class="model-number">
+    <label for="modelNumber">Model Number</label>
+    <input type="text" id="modelNumber" />
+  </div>
+  <div class="notes">
+    <label for="modelNumber">notes</label>
+    <textarea id="notes"></textarea>
+  </div>
 
-<h3>Default Dataset</h3>
-<div class="business-unit">
-<label for="currency">Business Unit</label>
-<select></select>
+  <h3>Default Dataset</h3>
+  <div class="business-unit">
+    <label for="currency">Business Unit</label>
+    <select>
+      multiselect
+    </select>
+  </div>
+  <div class="tenant-rule-name">
+    <label for="tenantRuleName">Tenant Rule Name</label>
+    <input type="text" id="tenantRuleName" />
+  </div>
+  <div class="Operating Unit">
+    <label for="currency">Operating Unit</label>
+    <select></select>
+  </div>
+  <div class="org-id">
+    <label for="orgId">Organization ID</label>
+    <input type="text" id="orgId" />
+  </div>
+  <div class="business-type">
+    <label for="currency">Business Type</label>
+    <select></select>
+  </div>
+  <div class="last-edited-by">
+    <label for="createdBy">Last Edited by</label>
+    <input type="text" />
+  </div>
+  <div class="last-edited">
+    <label for="lastEdited">Last Edited on:</label>
+    <div class="calendar"></div>
+  </div>
+
+  <h3>Customized Dataset</h3>
+  <div class="include-exclude">
+    <label for="includeExclude">Include/Exclude Something</label>
+    <input id="includeExclude" class="checkbox" />
+  </div>
+  <div class="manufacturer-code">
+    <label for="manufacturerCode">Manufacturer Code</label>
+    <select id="manufacturerCode">
+      multiselect
+    </select>
+  </div>
+  <div class="sales-entering-branch">
+    <label for="salesEnteringBranch">Sales Entering Branch</label>
+    <select id="salesEnteringBranch">
+      multiselect
+    </select>
+  </div>
+  <div class="warehouse-code">
+    <label for="warehouseCode">Warehouse Code</label>
+    <select id="warehouseCode">
+      multiselect
+    </select>
+  </div>
+  <div class="billToSites">
+    <label for="billToSites">Bill To Sites</label>
+    <select id="billToSites">
+      multiselect
+    </select>
+  </div>
+
+  <h3>Log Details</h3>
+  <div class="created-by">
+    <label for="createdBy">Last Created by</label>
+    <input type="text" />
+  </div>
+  <div class="created-on">
+    <label for="createdOn">Last Created on:</label>
+    <div class="calendar"></div>
+  </div>
+  <div class="last-updated-on">
+    <label for="lastUpdatedOn">Last Updated on:</label>
+    <div class="calendar"></div>
+  </div>
 </div>
-<div class="tenant-rule-name">
-<label for="tenantRuleName">Tenant Rule Name</label>
-<input type="text" id="tenantRuleName" />
+<h2>User Creation</h2>
+<div class="user-creation">
+  <h3>General Info</h3>
+
+  <div class="user-name">
+    <label for="userName">User Name</label>
+    <input type="text" />
+  </div>
+  <div class="user-email">
+    <label for="userEmail">User Email</label>
+    <input type="text" />
+  </div>
+  <div class="user-avatar">
+    <label for="userAvatar">Profile Avatar</label>
+    <button id="userAvatar" value="upload avatar">upload Avatar</button>
+  </div>
+  <div class="user-password">
+    <label for="userPassword">User Password</label>
+    <input type="password" />
+  </div>
+  <div class="user-notes">
+    <label for="userNotes">Notes</label>
+    <textarea></textarea>
+  </div>
+
+  <h3>Tenant Access</h3>
+  <div class="tenant-choice">
+    <label for="tenantChoice">Tenant Name</label>
+    <select id="tenantChoice"></select>
+  </div>
+  <div class="tenant-rulename">
+    <label for="tenantRulename">Tenant Rule Name</label>
+    <select id="tenantRulename"></select>
+  </div>
+  <div class="tenant-relationhip-type">
+    <label for="tenantRelationshipType">Relationship Type</label>
+    <select id="tenantRelationshipType"></select>
+  </div>
+  <div class="tenant-relationhip">
+    <label for="tenantRelationship">Tenant Relationship</label>
+    <select id="tenantRelationship"></select>
+  </div>
+  <h3>Data Access Rules</h3>
+  <div class="include-exclude-somethingelse">
+    <label for="includeExcludeSomethingelse">Include/Exclude Something</label>
+    <input id="includeExcludeSomethingelse" class="checkbox" />
+  </div>
+  <h3>Log Details</h3>
 </div>
-<div class="Operating Unit">
-<label for="currency">Operating Unit</label>
-<select></select>
-</div>
-<div class="org-id">
-<label for="orgId">Organization ID</label>
-<input type="text" id="orgId" />
-</div>
-<div class="business-type">
-<label for="currency">Business Type</label>
-<select></select>
-</div>
-<div class="last-edited-by">
-<label for="createdBy">Last Edited by</label>
-<input type="text" />
-</div>
-<div class="last-edited">
-<label for="lastEdited">Last Edited on:</label>
-<div class="calendar"></div>
-</div>
-<h3>Customized Dataset</h3>
-<div class="include-exclude">
-<label for="includeExclude">Include/Exclude Something</label>
-<input id="includeExclude" class="checkbox" />
-</div>
-<div class="manufacturer-code">
-<label for="manufacturerCode">Manufacturer Code</label>
-<select id="manufacturerCode" ></select>
-</div>
-<div class="manufacturer-code">
-<label for="manufacturerCode">Manufacturer Code</label>
-<select id="manufacturerCode" ></select>
-</div>
-<div class="manufacturer-code">
-<label for="manufacturerCode">Manufacturer Code</label>
-<select id="manufacturerCode" ></select>
-</div>
-<div class="manufacturer-code">
-<label for="manufacturerCode">Manufacturer Code</label>
-<select id="manufacturerCode" ></select>
-</div>
-<h3>Log Details</h3>
